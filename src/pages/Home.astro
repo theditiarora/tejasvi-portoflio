@@ -1,8 +1,14 @@
 ---
 import icon from "../asset/icon.png"
 import illust1 from "../asset/illustration1.png"
+import illust2 from "../asset/illustration2.png"
 import proj1 from "../asset/proj1.png"
 import proj2 from "../asset/proj2.png"
+import dribble from "../asset/dribble.png"
+import twit from "../asset/twit.png"
+import linkedin from "../asset/linkedin.png"
+import medium from "../asset/medium.png"
+
 import '@fontsource/ibm-plex-sans';
 ---
 <div class="mx-auto px-56">
@@ -46,4 +52,64 @@ import '@fontsource/ibm-plex-sans';
     </div>
 
     <hr class="mt-20">
+
+    <div class="flex mt-20 w-full gap-5">
+        <div class="flex items-center border w-full">
+            <img src={medium.src} alt="medium logo">
+            Check my other case studies
+        </div>
+        <div class="flex items-center border w-full">
+            <img src={dribble.src} alt="medium logo">
+            Dribbble shots
+        </div>
+    </div>
+
+    <hr class="my-20">
+
+    <div class="flex w-full gap-7 font-sans ">
+        <img class="h-[400px]" src={illust2.src} alt="illustration">
+        <div class="w-full">
+            <h1 class="py-6 pl-4 border">🔨Tools</h1>
+            <hr class="mt-4">
+            <ul class="list-disc mt-4 flex flex-col gap-2 ml-5">
+                <li>Figma</li>
+                <li>Prototyping tools</li>
+                <li>Notion</li>
+                <li>Github</li>
+            </ul>
+        </div>
+        <div class="w-full">
+            <h1 class="py-6 pl-4 w-full border">💪🏻Srengths</h1>
+            <hr class="mt-4">
+            <ul class="list-disc mt-4 flex flex-col gap-2 ml-5">
+                <li>Collaborative Spirit</li>
+                <li>Agile learner</li>
+                <li>Communication expert</li>
+                <li>Radical thinker</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr class="my-20">
+    <h1 class="text-heading font-serif font-semibold">Am I the <span class="text-[#CA922F]">one</span> you were looking for? <span class="text-sky-600">Let&#39;s Connect!</span></h1>
+
+    <p class="font-sans my-2">I enjoy having conversations about <span class="font-semibold">product management, psychology,</span> and <span class="font-semibold">design</span>. Intriguing side projects are always welcome.</p>
+
+    <p class="text-sub font-semibold tracking-wide my-14 font-serif">👉🏼 Reach me out at: <a class="text-gray-500 hover:text-[#37352F] transition ease-in-out duration-300" href="mailto: tejasviarora17@gmail.com">tejasviarora17@gmail.com</a>
+    </p>
+
+    <div class="flex w-full gap-5">
+        <div class="flex gap-2 items-center bg-[#D8E9F3] p-5 w-full">
+            <img class="h-6 bg-white p-1 rounded-sm" src={twit.src} alt="Twitter logo">
+            <a href="" class="text-gray-500 hover:text-black transition ease-in-out duration-300">Twitter</a>
+        </div>
+        <div class="flex gap-2 items-center bg-[#D8E9F3] p-5 w-full">
+            <img class="h-6 bg-white p-1 rounded-sm" src={linkedin.src} alt="Twitter logo">
+            <a href="" class="text-gray-500 hover:text-black transition ease-in-out duration-300">Linkedin</a>
+        </div>
+    </div>
+
+    <hr class="my-7">
+
+    <p class="mb-20">Thanks for visition 💛</p>
 </div>
