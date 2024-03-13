@@ -1,0 +1,307 @@
+---
+import Navbar from "../components/Navbar"
+import Airmeals from "../asset/airmeals/airmeals.png"
+import fiveW from "../asset/airmeals/fiveW.png"
+import figma from "../asset/figma.png"
+import solutions from "../asset/airmeals/solutions.png"
+import flow from "../asset/airmeals/flow.png"
+import ui from "../asset/airmeals/ui.png"
+import onbaord from "../asset/airmeals/onboard.png"
+import onbaord2 from "../asset/airmeals/onboard2.png"
+import hs from "../asset/airmeals/homescreen.png"
+import hs2 from "../asset/airmeals/homescreenui.png"
+import hsdesign from "../asset/airmeals/homecreendesigns.png"
+import offer from "../asset/airmeals/offer.png"
+import offerdesign from "../asset/airmeals/offerdesign.png"
+import offer2 from "../asset/airmeals/offer2.png"
+import recentorder from "../asset/airmeals/recentorders.png"
+import btmnav from "../asset/airmeals/bottomnav.png"
+import meal from "../asset/airmeals/meal.png"
+import mealdesc from "../asset/airmeals/mealdesc.png"
+import ordersummary from "../asset/airmeals/ordersummary.png"
+import payment from "../asset/airmeals/payment.png"
+import postorder from "../asset/airmeals/postorder.png"
+import postorder2 from "../asset/airmeals/postorder2.png"
+import ordersummary2 from "../asset/airmeals/ordersummaryiter.png"
+import myorder from "../asset/airmeals/myorder.png"
+import myorder2 from "../asset/airmeals/myorder2.png"
+import myorder3 from "../asset/airmeals/myorder3.png"
+import rating from "../asset/airmeals/rating.png"
+
+
+import '@fontsource/ibm-plex-sans';
+---
+<meta charset="UTF-8">
+<Navbar />
+<div class="px-56">
+    <div class="flex gap-10 mt-20 items-center">
+        <div class="font-serif flex-col flex items-center">
+            <div class="text-center">
+                <h1 class="text-[70px]">Air<span class="font-semibold ">Meals</span></h1>
+                <p class="text-[20px] ">Experience the convenience of in-flight dining, at your fingertip</p>
+            </div>
+            <div class="mt-28 text-center text-[20px]">
+                <p>Made by</p>
+                <p class="font-bold">Tejasvi Arora</p>
+            </div>
+        </div>
+
+        <img class="h-[550px]" src={Airmeals.src} alt="">
+    </div>
+
+    <div class="flex w-full gap-5 mt-10">
+        <div class="bg-gray-200 p-5 w-full font-semibold">
+            <p>💡 Timeline – 3 Months</p>           
+        </div>
+
+        <div class="bg-gray-200 p-5 w-full font-semibold">
+            <p class="">💡 Skills – Research, Design, Prototyping 
+            </p>           
+        </div>
+    </div>
+
+    <h1 class="text-heading font-bold font-serif tracking-wide mt-20 mb-3">🤥 Problem statement</h1>
+    <p class="text-gray-600 font-sans">Designing the entire experience for an in-flight food ordering app. Passengers can order food for immediate consumption after placing their orders on the same mobile app during their flight journey.</p>
+
+    <p class="px-10 border-l-4 border-black font-serif font-bold my-20">Airmeal intends to address this.</p>
+
+    <h1 class="text-heading font-bold font-serif tracking-wide mb-3">❓ What is AirMeal?</h1>
+    <p class="text-gray-600 font-sans">AirMeal is an in-flight food ordering application which can enhance the passenger&#39;s experience by providing a more convenient and personalized way to order food on a flight.</p>
+
+    <h1 class="text-heading font-bold font-serif tracking-wide mt-20 mb-3">💭 Assumptions</h1>
+    <div class="flex justify-between w-full mt-5">
+        <p class="w-full">The wifi is available on the flights.</p>
+        <p>The airlines will have the necessary infrastructure to support the integration of the app.</p>
+    </div>
+
+    <hr class="my-20">
+    <img class="h-[660px] mx-auto" src={fiveW.src} alt="Five Ws">
+    <hr class="my-20">
+    
+    <div class="flex w-full gap-5 mt-10">
+        <div class="bg-[#D8E9F3] p-2 w-full">
+            <div class="flex items-center border w-full">
+                <img src={figma.src} alt="medium logo">
+                <a class="text-gray-500" href="">Click here to visit the prototype ↗︎</a>
+            </div>         
+        </div>
+        
+        <div class="bg-[#D8E9F3] p-2 w-full ">
+            <div class="flex items-center border w-full">
+                <img src={figma.src} alt="medium logo">
+                <a class="text-gray-500" href="">Click here to visit the Figma file ↗</a>
+            </div>           
+        </div>
+    </div>
+    
+    <hr class="my-20">
+    
+    <h1 class="font-semibold font-serif text-heading">What are the current solutions for this?</h1>
+    <img src={solutions.src} alt="CUrrent solutions" class="h-[650px] mt-10">
+    <h1 class="font-semibold font-serif text-heading mt-24">🤔 Understanding the problem statement</h1>
+    <p class="font-sans mt-5">
+        When ordering food through a menu card provided on the flight, passengers are limited to the menu options, and may have to wait for a flight attendant to take their order and bring them their food. This can lead to longer wait times and limited options for passengers with dietary restrictions or preferences.
+    </p>
+    
+    <p class="font-sans mt-3">In a conversation with my many friends and people who regularly travel via flights, two interesting insights came out:</p>
+    
+    <p class="border-l-2 border-black pl-10 mt-10 ml-10 italic font-serif">“Asking for the Menu from the flight attendant is tough because I&#39;m shy and reluctant to talk in public. Also, it becomes a peer-pressure to order something at the end due to the fear of judgement by the people around.”</p>
+    
+    <p class="border-l-2 border-black mt-4 pl-10 ml-10 italic font-serif">“I have to wait for the physical menu card to come to me. Alongside, menu cards have many germs which are capable for infecting. I have become more conscious about their hygiene post Covid-19 pandemic.”</p>
+    
+    <h1 class="font-semibold font-serif text-heading mt-24">🍗 My Solution</h1>
+    <img class="h-[500px] mx-auto" src={flow.src} alt="Five Ws">
+    
+    <p class="font-sans">The <span class="font-semibold"> 5 virtues</span> that I tried to pull off while solving the problem:</p>
+    <div class="ml-4 font-sans flex flex-col gap-2">
+        <p class="mt-3">1. <span class="font-semibold bg-red-200">Convenience:</span> Passengers may prefer to order their food in advance or have more options to choose from than what is offered on the flight.</p>
+        
+        <p class="mt-3">2. <span class="font-semibold bg-red-200">Time-saving: </span> Passengers may not want to wait for the food service to reach them during the flight and instead prefer to order their food at a time that is convenient for them.</p>
+        
+        <p class="mt-3">3. <span class="font-semibold bg-red-200">Special dietary requirements: </span> Passengers with dietary restrictions or preferences, such as vegetarians or people with food allergies, may appreciate the ability to order food that meets their specific needs.</p>
+        
+        <p class="mt-3">4. <span class="font-semibold bg-red-200"> Customization:</span> Passengers may want to order a meal that is tailored to their tastes and preferences.</p>
+        
+        <p class="mt-3">5. <span class="font-semibold bg-red-200">Reduced Contact: </span>  In today&#39;s world, contact-less service is a big concern, order via the app will reduce contact and make it safer to order in-flight
+        </p>
+    </div>
+    <h1 class="font-semibold font-serif text-heading mt-24">0️⃣ Final UI</h1>
+    <img class="w-full mt-10 mx-auto" src={ui.src} alt="Final ui">
+
+    <h1 class="font-semibold font-serif text-heading mt-24">1️⃣ Onboarding</h1>
+    <p class="text-gray-500 font-sans mt-10">The onboarding screens are designed to make the passenger feel premium and welcomed. A quick glimpse of the features is also present. In the onboarding process, the passenger&#39;s PNR number is needed. The rest of the details like the passenger&#39;s name and flight details can be fetched using the PNR.</p>
+    
+    <img class="w-full mt-10" src={onbaord.src} alt="onboarding">
+    <img class="w-full mt-10" src={onbaord2.src} alt="onboarding">
+    
+    <h1 class="font-semibold font-serif text-heading mt-24">2️⃣ Homescreen</h1>
+    <img class="w-full mt-10" src={hs.src} alt="onboarding">
+    <img class="w-full mt-20" src={hs2.src} alt="onboarding">
+    
+    <p class="font-serif text-gray-700 text-sub ml-24 my-10 font-semibold">↪Process behind the design:</p>
+    <img class="w-full mt-20" src={hsdesign.src} alt="home screen design">
+    
+    <div class="flex gap-10 w-full mt-20">
+        <div>
+            <p class="font-semibold inline-block bg-red-200 font-serif px-4 py-2 mb-2">1st iteration</p>
+            <p class="font-sans">
+                Each food item displayed doesn&#39;t have a way to make it feel like a box and everything looks clustered. Add button was missing.
+            </p>
+        </div>
+        <div>
+            <p class="font-semibold inline-block bg-red-200 font-serif  px-4 py-2 mb-2">2nd iteration</p>
+            <p class="font-sans">
+                Add button was added. Each food item was displayed in a box, which makes it more readable. Positioned the Bestseller tag&#39; at a better place.
+            </p>
+            
+        </div>
+        <div>
+            <p class="font-semibold inline-block bg-red-200 font-serif  px-4 py-2 mb-2">3rd iteration</p>
+            <p class="font-sans">
+                Rectified a few spacing issues. Removed the white curve from above.
+            </p>
+            
+        </div>
+    </div>
+    <h1 class="font-semibold font-serif text-heading mt-24">3️⃣ Offers tab</h1>
+    <p class="mt-10">Offers and discounts can help customers feel a sense of exclusivity and value, which can increase brand loyalty. Customers are more likely to use the app again if they believe they are getting a good deal. By making products or services more affordable, offers and discounts can encourage customers to make more purchases. This could result in increased revenue for the airline.</p>
+    <img class="mt-10 h-[300px] mx-auto" src={offer.src} alt="offer">
+
+    <p class="font-serif text-gray-700 text-sub ml-24 mt-20 font-semibold">↪Process and ideation behind the design:</p>
+    <img class="w-full mt-10" src={offerdesign.src} alt="offer design">
+    <div class="flex gap-10 w-full mt-20">
+        <div class="w-full">
+            <p class="font-semibold inline-block bg-red-200 font-serif px-4 py-2 mb-2">1st iteration</p>
+            <p class="font-sans">
+                I placed a small box which gave a badge-like feel. But it was not expressing the benefits of being a First Class passenger. This will not encourage the users to order meals.
+            </p>
+        </div>
+        <div class="w-full">
+            <p class="font-semibold inline-block bg-red-200 font-serif px-4 py-2 mb-2">2nd iteration</p>
+            <p class="font-sans">
+                Placed the box which describes the benefits of being a First Class passenger.
+            </p>
+        </div>
+    </div>
+
+    <img class="w-full mt-20" src={offer2.src} alt="Offer">
+    <div class="flex gap-10 w-full mt-20">
+        <div class="w-full font-sans">
+            <p class="font-semibold inline-block bg-red-200 font-serif px-4 py-2 mb-2">3rd iteration</p>
+            <p>
+                Made the offer tab different to make it bright and eye-catching.
+            </p>
+            <p class="font-semibold">Discarded this design because it felt like an “advertisement” more than an offer (according to the review I received)</p>
+        </div>
+        <div class="w-full">
+            <p class="font-semibold inline-block bg-red-200 font-serif px-4 py-2 mb-2">4th iteration</p>
+            <p class="font-sans">
+                Changed the copywriting to &#39;Your benefits&#39;. Made small containers to show the offer and each container displays an offer.
+            </p>
+        </div>
+    </div>
+    <h1 class="font-semibold font-serif text-heading mt-24">4️⃣ Order status on the homescreen</h1>
+    <img class="w-full mt-20" src={recentorder.src} alt="recent order">
+    
+    <h1 class="font-semibold font-serif text-heading mt-24">5️⃣ Bottom NavBar</h1>
+    <p class="font-sans">I discovered that displaying the time left for the flight to arrive its destination was a necessary option. It highlights the time left for landing which will give an idea to the passengers that this much time is left so they can order their meals accordingly. If that thing is not highlighted then there are chances that users will order food that they can&#39t finish before landing and this will lead to the packaging of leftover food which will increase companies&#39 costs.</p>
+    
+    <img class="w-full mt-20" src={btmnav.src} alt="Bottom Navbar">
+    <div class="flex gap-10 w-full mt-20">
+        <div>
+            <p class="font-semibold inline-block bg-red-200 font-serif px-4 py-2 mb-2">1st iteration</p>
+            <p class="font-sans">
+                I displayed the time left for arrival but failed to accommodate the cart option.
+            </p>
+        </div>
+        <div>
+            <p class="font-semibold inline-block bg-red-200 font-serif  px-4 py-2 mb-2">2nd iteration</p>
+            <p class="font-sans">
+                I displayed the time left for arrival but failed to accommodate the cart option.
+            </p>
+            
+        </div>
+        <div>
+            <p class="font-semibold inline-block bg-red-200 font-serif  px-4 py-2 mb-2">3rd iteration</p>
+            <p class="font-sans">
+                Successfully displayed the total cost, the total number of items and flight duration.
+            </p>
+            
+        </div>
+    </div>
+    <h1 class="font-semibold font-serif text-heading mt-24">6️⃣Meal description page</h1>
+    <p class="font-sans mt-10">
+        This page pops up when the user taps on the food tab. There are a variety of passengers on the flight who have different priorities while ordering food.
+    </p>
+    <img class="w-full mt-20" src={meal.src} alt="Meal description">
+    <p class="font-serif text-gray-700 text-sub ml-24 mt-20 font-semibold">↪Process and ideation behind the design:</p>
+    
+    <img class="w-full mt-20" src={mealdesc.src} alt="Meal description">
+    <div class="flex gap-10 w-full mt-20">
+        <div>
+            <p class="font-semibold inline-block bg-red-200 font-serif px-4 py-2 mb-2">1st iteration</p>
+            <p class="font-sans">
+                The design gave off much &#39straight outta Dribbble&#39 vibes, hence had to iterate it.
+            </p>
+        </div>
+        <div>
+            <p class="font-semibold inline-block bg-red-200 font-serif  px-4 py-2 mb-2">2nd iteration</p>
+            <p class="font-sans">
+                Added tags in the description so that users can understand and make better decisions.
+            </p>
+            
+        </div>
+        <div>
+            <p class="font-semibold inline-block bg-red-200 font-serif  px-4 py-2 mb-2">3rd iteration</p>
+            <p class="font-sans">
+                Made the 2nd iteration a more subtle.
+            </p>
+            
+        </div>
+    </div>
+    <h1 class="font-semibold font-serif text-heading mt-24">7️⃣ Order Summary Page</h1>
+    <p class="font-sans mt-10">
+        Once the passenger has decided what they want to order they can click on the ‘View Cart →’ to see the order summary. This page will reflect the amount of money saved, and free meals/snacks provided.
+    </p>
+    <img class="w-full mt-10" src={ordersummary.src} alt="order summary">
+    
+    <h1 class="font-semibold font-serif text-heading mt-24">8️⃣ Payments</h1>
+    <img class="w-full mt-10" src={payment.src} alt="Payment">
+    
+    <h1 class="font-semibold font-serif text-heading mt-24">9️⃣ Post-order flow</h1>
+    <img class="w-full mt-10" src={postorder.src} alt="Post order">
+    
+    <p class="font-serif text-gray-700 text-sub ml-24 mt-20 font-semibold">↪Process and ideation behind the design:</p>
+    <img class="w-full mt-10" src={postorder2.src} alt="Post order">
+    
+    <img class="w-full mt-10" src={ordersummary2.src} alt="order summary">
+    <div class="flex gap-10 w-full mt-20">
+        <div class="w-full">
+            <p class="font-semibold inline-block bg-red-200 font-serif px-4 py-2 mb-2">1st iteration</p>
+            <p class="font-sans">
+                A normal box that tells about the food items and the total amount.
+            </p>
+        </div>
+        <div  class="w-full">
+            <p class="font-semibold inline-block bg-red-200 font-serif px-4 py-2 mb-2">2nd iteration</p>
+            <p class="font-sans">
+                The 1st iteration needed to be more there added more information like whether it was paid or not paid. Since users are provided with the option to pay for the meals when the meals were delivered therefore this feature seemed important.
+            
+        </div>
+        <div class="w-full">
+            <p class="font-semibold inline-block bg-red-200 font-serif  px-4 py-2 mb-2">3rd iteration</p>
+            <p class="font-sans">
+                Added time and day. Time will let the <span class="font-semibold">user differentiate between the old and recent orders</span> (assuming they ordered the same item twice). Added day because considering the case when a user travels and the day changes to 00:00
+            </p>
+            
+        </div>
+    </div>
+    <h1 class="font-semibold font-serif text-heading mt-24">🔟 My orders</h1>
+    
+    <img class="w-full mt-20" src={myorder3.src} alt="my order">
+    <img class="w-full mt-20" src={myorder.src} alt="my order">
+    <img class="w-full mt-20" src={myorder2.src} alt="my order">
+    
+    <h1 class="font-semibold font-serif text-heading mt-24">1️⃣1️⃣ My orders</h1>
+    <img class="w-full mt-20" src={rating.src} alt="Rating">
+</div>
