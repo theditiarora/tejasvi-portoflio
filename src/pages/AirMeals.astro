@@ -32,21 +32,13 @@ import '@fontsource/ibm-plex-sans';
 import '@fontsource/poppins';
 ---
 <meta charset="UTF-8">
-<Navbar client:load />
-<div class="px-64">
-    <div class="flex gap-10 mt-20 items-center">
-        <div class="font-serif flex-col flex items-center">
-            <div class="text-center">
-                <h1 class="text-[70px]">Air<span class="font-semibold ">Meals</span></h1>
-                <p class="text-[20px] ">Experience the convenience of in-flight dining, at your fingertip</p>
-            </div>
-            <div class="mt-28 text-center text-[20px]">
-                <p>Made by</p>
-                <p class="font-bold">Tejasvi Arora</p>
-            </div>
-        </div>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
 
-        <img class="h-[550px]" src={Airmeals.src} alt="">
+<Navbar client:load />
+<div class="mx-auto px-20 lg:px-40 xl:px-56 ">
+    <div class="flex gap-10 mt-20">
+
+        <img class="w-full" src={Airmeals.src} alt="">
     </div>
 
     <div class="flex w-full gap-5 mt-10">
