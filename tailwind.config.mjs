@@ -16,7 +16,10 @@ export default {
 			},
 			colors: {
 				orange: "#FFECCC",
-			}
+			},
+			screens: {
+				'tablet': '670px',
+			  },
 		},
 	},
 	plugins: [],

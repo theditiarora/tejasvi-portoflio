@@ -11,47 +11,52 @@ import medium from "../asset/medium.png"
 import '@fontsource/poppins';
 import '@fontsource/ibm-plex-sans';
 ---
-<div class="mx-auto px-56">
+<div class="mx-auto px-20 lg:px-40 xl:px-56 ">
     <img class="h-36 mt-24" src={icon.src} alt="Icon">
     <h1 class="font-serif font-[900] text-sub mt-10">Hey there, my name is Tejasvi, UI/UX Designer based in Toronto👋🏼 </h1>
-
-    <div class="flex justify-between items-center">
-        <p class="font-sans text-content">
-            I like the blend of <span class="text-[#ca922f] font-semibold">psychology with design</span> and love using it. Besides that, <span  class="text-[#ca922f] font-semibold">I like new challenges</span> and <span  class="text-[#ca922f] font-semibold">side projects</span> because I am inclined to discover new things in design.
-        </p>
+    
+    <div class="flex tablet:flex-row flex-col justify-between items-center">
+        <div class="">
+            <p class="font-sans text-content mt-10">
+                A <span class="text-[#ca922f] font-semibold ">passionate</span> and<span class="text-[#ca922f] font-semibold">efficient designer</span> who <span class="text-[#ca922f] font-semibold">loves</span> applying <span  class="text-[#ca922f] font-semibold">design principle</span> to create meaningful experience that <span  class="text-[#ca922f] font-semibold">benefits both consumers</span> and <span class="text-[#ca922f] font-semibold">companies</span>
+            </p>
+            <p class="mt-3">I&#39;m currently look for a co-op in Canada that will allow me to use my design skills in the UI/UX design space.</p>
+        </div>
         <img class="mt-14 h-[300px]" src={illust1.src} alt="">
     </div>
 
     <p class="bg-orange p-2 mt-14">👉🏼 <span class="font-semibold">Currently: </span> Grad student at McMaster University looking for Co-op opportunities for Fall 2024 based in Canada 🇨🇦</p>
 
-    <h1 class="text-heading font-semibold font-serif mt-20">My Work</h1>
+    <h1 class="text-heading font-semibold font-serif mt-20">My Best Work</h1>
     <p class="text-content bg-orange font-semibold font-sans mt-10 p-1">🧑🏻‍💻 UI/UX Design Case Study</p>
 
-    <div class="flex gap-10 mt-10">
-        <img class="h-[500px]" src={proj1.src} alt="Project AirMeals">
+    <div class="flex gap-10 mt-10 tablet:flex-row flex-col">
+        <img class="tablet:h-[300px] lg:h-[350px] xl:h-[500px]" src={proj1.src} alt="Project AirMeals">
         <div class="w-full">
-            <h1 class="text-sub text-sky-600 font-semibold bg-sky-100 w-full p-3 font-serif">AirMeals</h1>
+            <h1 class="text-[20px] lg:text-sub text-sky-600 font-semibold bg-sky-100 w-full p-3 font-serif">Improving the in-flight meals ordering experience</h1>
             <p class="font-sans mt-5">AirMeal is an in	flight food ordering application that can enhance the passenger&#39;s experience by providing a more convenient and personalized way to order food on a flight.</p>
-            <a class="mt-5 inline-block hover:bg-gray-100 w-full p-3 transition ease-in-out duration-300" href="/AirMeals">✈️ Read the entire case study</a>
+            <p class="mt-5 font-semibold">UI Design • Prototype • Product Thinking</p>
+            <a class="mt-5 inline-block bg-gray-100 hover:bg-gray-200 w-full p-3 transition ease-in-out duration-300" href="/AirMeals"> Read the entire case study</a>
         </div>
     </div>
     <hr class="mt-20">
-
+    
     <p class="text-content bg-orange font-semibold font-sans mt-10 p-1">💼 UI/UX Design Internship work</p>
-    <div class="flex gap-10 mt-10">
-        <img class="h-[340px]" src={proj2.src} alt="Project AirMeals">
+    <div class="flex gap-10 mt-10 tablet:flex-row flex-col">
+        <img class="h-[200px] lg:h-[400px] lg:w-1/2 xl:h-[340px] object-cover" src={proj2.src} alt="Project AirMeals">
         <div class="w-full">
-            <h1 class="text-sub text-gray-700 font-semibold bg-[#E7DDEE] w-full p-3 font-serif">Making a Web Tool for People with Low Vision or No Vision
+            <h1 class="text-[20px] lg:text-sub text-gray-700 font-semibold bg-[#E7DDEE] w-full p-3 font-serif">Making a Web Tool for People with Low Vision or No Vision
             </h1>
             <p class="font-sans mt-5">Envision is a Dutch startup that specializes in AI-assistive technology, particularly smart glasses aka Envision Glasses, to empower the blind and people with low vision. They aim to enhance independence, accessibility, and quality of life for people who are blind or who have low vision through their innovative solutions.</p>
-
-            <a class="mt-2 inline-block hover:bg-gray-100 w-full p-3 transition ease-in-out duration-300" href="/Envision">👁️‍🗨️ Click here to read the Case Study</a>
+            <p class="mt-5 font-semibold">Web Design • User Interviews • Research • Accessibility, </p>
+            
+            <a class="mt-2 inline-block hover:bg-gray-200 bg-gray-100 w-full p-3 transition ease-in-out duration-300" href="/Envision">Click here to read the Case Study</a>
         </div>
     </div>
 
-    <hr class="mt-20">
+    <hr class="my-20">
 
-    <div class="flex mt-20 w-full gap-5">
+    <!-- <div class="flex mt-20 w-full gap-5">
         <div class="flex items-center border w-full">
             <img src={medium.src} alt="medium logo">
             Check my other case studies
@@ -62,28 +67,32 @@ import '@fontsource/ibm-plex-sans';
         </div>
     </div>
 
-    <hr class="my-20">
+    <hr class="my-20"> -->
 
-    <div class="flex w-full gap-7 font-sans ">
-        <img class="h-[400px]" src={illust2.src} alt="illustration">
+    <div class="flex w-full gap-7 font-sans tablet:flex-row flex-col ">
+        <img class="h-[400px] w-full tablet:h-[250px] lg:h-[350px] xl:h-[400px]" src={illust2.src} alt="illustration">
         <div class="w-full">
-            <h1 class="py-6 pl-4 border">🔨Tools</h1>
+            <h1 class=" py-6 tablet:py-3 lg:py-6 pl-4 border">🔨Tools</h1>
             <hr class="mt-4">
             <ul class="list-disc mt-4 flex flex-col gap-2 ml-5">
                 <li>Figma</li>
-                <li>Prototyping tools</li>
-                <li>Notion</li>
+                <li>Zpelin</li>
+                <li>Framer</li>
                 <li>Github</li>
+                <li>Notion</li>
+                <li>VS Code</li>
             </ul>
         </div>
         <div class="w-full">
-            <h1 class="py-6 pl-4 w-full border">💪🏻Srengths</h1>
+            <h1 class="py-6 tablet:py-3 lg:py-6 pl-4 w-full border">💪🏻Srengths</h1>
             <hr class="mt-4">
             <ul class="list-disc mt-4 flex flex-col gap-2 ml-5">
-                <li>Collaborative Spirit</li>
+                <li>User Reasearch</li>
+                <li>Interactive Design</li>
+                <li>Asseccible Design</li>
+                <li>Usability testing</li>
                 <li>Agile learner</li>
                 <li>Communication expert</li>
-                <li>Radical thinker</li>
             </ul>
         </div>
     </div>
@@ -96,14 +105,14 @@ import '@fontsource/ibm-plex-sans';
     <p class="text-sub font-semibold tracking-wide my-14 font-serif">👉🏼 Reach me out at: <a class="text-gray-500 hover:text-[#37352F] transition ease-in-out duration-300" href="mailto: tejasviarora17@gmail.com">tejasviarora17@gmail.com</a>
     </p>
 
-    <div class="flex w-full gap-5">
+    <div class="flex w-full gap-5 tablet:flex-row flex-col ">
         <div class="flex gap-2 items-center bg-[#D8E9F3] p-5 w-full">
             <img class="h-6 bg-white p-1 rounded-sm" src={twit.src} alt="Twitter logo">
-            <a href="" class="text-gray-500 hover:text-black transition ease-in-out duration-300">Twitter</a>
+            <a href="https://twitter.com/TejasviArora17" class="text-gray-500 hover:text-black transition ease-in-out duration-300">Twitter</a>
         </div>
         <div class="flex gap-2 items-center bg-[#D8E9F3] p-5 w-full">
             <img class="h-6 bg-white p-1 rounded-sm" src={linkedin.src} alt="Twitter logo">
-            <a href="" class="text-gray-500 hover:text-black transition ease-in-out duration-300">Linkedin</a>
+            <a href="https://www.linkedin.com/in/tejasvi-arora-738460150/" class="text-gray-500 hover:text-black transition ease-in-out duration-300">Linkedin</a>
         </div>
     </div>
 
@@ -111,3 +120,5 @@ import '@fontsource/ibm-plex-sans';
 
     <p class="mb-20">Thanks for visition 💛</p>
 </div>
+
+<!-- responsive, copy email -->

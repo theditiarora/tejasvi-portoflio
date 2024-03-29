@@ -9,10 +9,11 @@ import Navbar from "../components/Navbar.jsx"
     <title>Document</title>
 </head>
 <body>
-    <Navbar />
+    <Navbar client:load />
+    <main>
+        <slot />
+    </main>
 </body>
 
-<main>
-    <slot />
-</main>
+
 </html>
