@@ -41,7 +41,7 @@ import '@fontsource/poppins';
         <img class="w-full" src={Airmeals.src} alt="">
     </div>
 
-    <div class="flex w-full gap-5 mt-10">
+    <div class="flex w-full gap-5 mt-10 tablet:flex-row flex-col ">
         <div class="bg-gray-200 p-5 w-full font-semibold">
             <p>💡 Timeline – 3 Months</p>           
         </div>
@@ -61,16 +61,16 @@ import '@fontsource/poppins';
     <p class="text-gray-600 font-sans">AirMeal is an in-flight food ordering application which can enhance the passenger&#39;s experience by providing a more convenient and personalized way to order food on a flight.</p>
 
     <h1 class="text-heading font-bold font-serif tracking-wide mt-20 mb-3">💭 Assumptions</h1>
-    <div class="flex justify-between w-full mt-5">
-        <p class="w-full">The wifi is available on the flights.</p>
-        <p>The airlines will have the necessary infrastructure to support the integration of the app.</p>
+    <div class="flex justify-between w-full mt-5 tablet:flex-row flex-col">
+        <p class="w-full">- The wifi is available on the flights.</p>
+        <p class="tablet:mt-0 mt-5">- The airlines will have the necessary infrastructure to support the integration of the app.</p>
     </div>
 
     <hr class="my-20">
-    <img class="h-[660px] mx-auto" src={fiveW.src} alt="Five Ws">
+    <img class=" h-[600px] w-full tablet:h-[660px] mx-auto" src={fiveW.src} alt="Five Ws">
     <hr class="my-20">
     
-    <div class="flex w-full gap-5 mt-10">
+    <div class="flex w-full gap-5 mt-10 tablet:flex-row flex-col">
         <div class=" w-full">
             <div class="flex items-center border w-full p-2">
                 <img src={figma.src} alt="medium logo">
@@ -89,7 +89,7 @@ import '@fontsource/poppins';
     <hr class="my-20">
     
     <h1 class="font-semibold font-serif text-heading">What are the current solutions for this?</h1>
-    <img src={solutions.src} alt="CUrrent solutions" class="h-[650px] mt-10">
+    <img src={solutions.src} alt="CUrrent solutions" class="tablet:h-[650px] w-full h-[400px] mt-10">
     <h1 class="font-semibold font-serif text-heading mt-24">🤔 Understanding the problem statement</h1>
     <p class="font-sans mt-5">
         When ordering food through a menu card provided on the flight, passengers are limited to the menu options, and may have to wait for a flight attendant to take their order and bring them their food. This can lead to longer wait times and limited options for passengers with dietary restrictions or preferences.
@@ -102,7 +102,7 @@ import '@fontsource/poppins';
     <p class="border-l-2 border-black mt-4 pl-10 ml-10 italic font-serif">“I have to wait for the physical menu card to come to me. Alongside, menu cards have many germs which are capable for infecting. I have become more conscious about their hygiene post Covid-19 pandemic.”</p>
     
     <h1 class="font-semibold font-serif text-heading mt-24">🍗 My Solution</h1>
-    <img class="h-[500px] mx-auto" src={flow.src} alt="Five Ws">
+    <img class="tablet:h-[500px] w-full h-[400px]  tablet:mx-auto my-10" src={flow.src} alt="The flow">
     
     <p class="font-sans">The <span class="font-semibold"> 5 virtues</span> that I tried to pull off while solving the problem:</p>
     <div class="ml-4 font-sans flex flex-col gap-2">
@@ -133,7 +133,7 @@ import '@fontsource/poppins';
     <p class="font-serif text-gray-700 text-sub ml-24 my-10 font-semibold">↪Process behind the design:</p>
     <img class="w-full mt-20" src={hsdesign.src} alt="home screen design">
     
-    <div class="flex gap-10 w-full mt-20">
+    <div class="flex gap-10 w-full mt-20 tablet:flex-row flex-col">
         <div>
             <p class="font-semibold inline-block bg-red-200 font-serif px-4 py-2 mb-2">1st iteration</p>
             <p class="font-sans">
@@ -159,9 +159,9 @@ import '@fontsource/poppins';
     <p class="mt-10">Offers and discounts can help customers feel a sense of exclusivity and value, which can increase brand loyalty. Customers are more likely to use the app again if they believe they are getting a good deal. By making products or services more affordable, offers and discounts can encourage customers to make more purchases. This could result in increased revenue for the airline.</p>
     <img class="mt-10 h-[300px] mx-auto" src={offer.src} alt="offer">
 
-    <p class="font-serif text-gray-700 text-sub ml-24 mt-20 font-semibold">↪Process and ideation behind the design:</p>
+    <p class="font-serif text-gray-700 text-sub tablet:ml-24 mt-20 font-semibold">↪Process and ideation behind the design:</p>
     <img class="w-full mt-10" src={offerdesign.src} alt="offer design">
-    <div class="flex gap-10 w-full mt-20">
+    <div class="flex gap-10 w-full mt-20 tablet:flex-row flex-col">
         <div class="w-full">
             <p class="font-semibold inline-block bg-red-200 font-serif px-4 py-2 mb-2">1st iteration</p>
             <p class="font-sans">
@@ -177,7 +177,7 @@ import '@fontsource/poppins';
     </div>
 
     <img class="w-full mt-20" src={offer2.src} alt="Offer">
-    <div class="flex gap-10 w-full mt-20">
+    <div class="flex gap-10 w-full mt-20 tablet:flex-row flex-col">
         <div class="w-full font-sans">
             <p class="font-semibold inline-block bg-red-200 font-serif px-4 py-2 mb-2">3rd iteration</p>
             <p>
@@ -199,7 +199,7 @@ import '@fontsource/poppins';
     <p class="font-sans">I discovered that displaying the time left for the flight to arrive its destination was a necessary option. It highlights the time left for landing which will give an idea to the passengers that this much time is left so they can order their meals accordingly. If that thing is not highlighted then there are chances that users will order food that they can&#39t finish before landing and this will lead to the packaging of leftover food which will increase companies&#39 costs.</p>
     
     <img class="w-full mt-20" src={btmnav.src} alt="Bottom Navbar">
-    <div class="flex gap-10 w-full mt-20">
+    <div class="flex gap-10 w-full mt-20 tablet:flex-row flex-col">
         <div>
             <p class="font-semibold inline-block bg-red-200 font-serif px-4 py-2 mb-2">1st iteration</p>
             <p class="font-sans">
@@ -226,10 +226,10 @@ import '@fontsource/poppins';
         This page pops up when the user taps on the food tab. There are a variety of passengers on the flight who have different priorities while ordering food.
     </p>
     <img class="w-full mt-20" src={meal.src} alt="Meal description">
-    <p class="font-serif text-gray-700 text-sub ml-24 mt-20 font-semibold">↪Process and ideation behind the design:</p>
+    <p class="font-serif text-gray-700 text-sub tablet:ml-24 mt-20 font-semibold">↪Process and ideation behind the design:</p>
     
     <img class="w-full mt-20" src={mealdesc.src} alt="Meal description">
-    <div class="flex gap-10 w-full mt-20">
+    <div class="flex gap-10 w-full mt-20 tablet:flex-row flex-col">
         <div>
             <p class="font-semibold inline-block bg-red-200 font-serif px-4 py-2 mb-2">1st iteration</p>
             <p class="font-sans">
@@ -263,11 +263,11 @@ import '@fontsource/poppins';
     <h1 class="font-semibold font-serif text-heading mt-24">9️⃣ Post-order flow</h1>
     <img class="w-full mt-10" src={postorder.src} alt="Post order">
     
-    <p class="font-serif text-gray-700 text-sub ml-24 mt-20 font-semibold">↪Process and ideation behind the design:</p>
+    <p class="font-serif text-gray-700 text-sub tablet:ml-24 mt-20 font-semibold">↪Process and ideation behind the design:</p>
     <img class="w-full mt-10" src={postorder2.src} alt="Post order">
     
     <img class="w-full mt-10" src={ordersummary2.src} alt="order summary">
-    <div class="flex gap-10 w-full mt-20">
+    <div class="flex gap-10 w-full mt-20 tablet:flex-row flex-col">
         <div class="w-full">
             <p class="font-semibold inline-block bg-red-200 font-serif px-4 py-2 mb-2">1st iteration</p>
             <p class="font-sans">
@@ -301,13 +301,9 @@ import '@fontsource/poppins';
     <ul class="list-disc mt-5 flex flex-col gap-3 ml-5">
         <li>Get comfortable with the critique. Its totally okay if you dont get the desired feedback you were expecting. Having a thirst to learn brings the best out of you.</li>
         <li>It is not necessary to follow the conventional design style. For example- It wasnt necessary to make a Bottom NavBar with four different icons. However, it served as a cart value and the duration of the flight</li>
-        <li>It was a unique problem in itself and it would be nearly impossible to put myself in the shoes of the user</li>
-        <li>Following the competetion of user interveiw, it was benificial to craft a compehrive summary that interconnects key points and highlights common themes or issues identified by all interveiwees. This approach contributed to a  deeper Understanding of reccuring patterns. The valuable insight gained from my intership underscores the potential to significatly elevate the efficiany of user interview</li>
+        <li>Never fall in love with your design. The moment you fall in love with your work is the time when you stop looking for improvements.</li>
     </ul>
     
-    <h1 class="font-semibold font-serif text-heading mt-24">Final Thoughts</h1>
-    <p>The oppurtunity to work on inclusive design and in particular, designing for blind users was absolutely wonderful and i loved it!</p>
-    <p>This experience has not only improved my professional skills but also left an <span class="font-semibold">impact</span> on how I <span class="font-semibold">percieve</span> the <span class="font-semibold">role of technology </span> in <span class="font-semibold">creating</span> an <span class="font-semibold">inclusive world. Prioritizing accessiblity </span>over anything was the <span class="font-sembold">most challenging part</span>. This meant stepping into the shoes of blind users. Understanding their unique challenges, and adapting our design approach to accomodate their requirement.</p>
 
     <p>Many thnaks for sticking with it. I hope you all found it useful ✨</p>
     
